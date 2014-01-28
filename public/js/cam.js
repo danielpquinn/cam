@@ -7,7 +7,7 @@
   function Cam() {}
 
   Cam.prototype.init = function () {
-    this.socket = io.connect('http://localhost:8082');
+    this.socket = io.connect('http://' + window.location.host);
     this.container = document.getElementById('security-camera');
     this.canvas = document.createElement('canvas');
     this.context = this.canvas.getContext('2d');

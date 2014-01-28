@@ -5,7 +5,7 @@
   function Viewer() {};
 
   Viewer.prototype.init = function () {
-    this.socket = io.connect('http://localhost:8082');
+    this.socket = io.connect('http://' + window.location.host);
     this.image = new Image();
     this.container = document.getElementById('viewer');
     this.render();
