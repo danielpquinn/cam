@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Cam</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/cam.js"></script>
+    <script type="text/javascript">
+      var Cam = new Cam();
+      
+      document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+          Cam.init();
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="security-camera"></div>
+  </body>
+</html>

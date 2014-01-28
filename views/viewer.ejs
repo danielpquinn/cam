@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Cam</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/viewer.js"></script>
+    <script type="text/javascript">
+      var Viewer = new Viewer();
+      
+      document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+          Viewer.init();
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="viewer"></div>
+  </body>
+</html>
