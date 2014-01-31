@@ -1,6 +1,6 @@
 var express = require('express'),
   app = express(),
-  server = require('http').createServer(app).listen(process.env.NODE_PORT || 8082),
+  server = require('http').createServer(app).listen(process.env.PORT || 8082),
   io = require('socket.io').listen(server, { log: false }),
   camStarted = false;
 
